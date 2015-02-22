@@ -13,7 +13,7 @@
         {
 
             Int32 x = 0;
-            if ("1".TryParseAs<Int32>(ref x))
+            if ("1".TryParseAs(ref x))
             {
                 Console.WriteLine("'1' parsed as Int32");
             }
@@ -23,7 +23,7 @@
             }
 
             SwimStroke s = SwimStroke.Unknown;
-            if ("FREESTYLE".TryParseAs<SwimStroke>(ref s))
+            if ("FREESTYLE".TryParseAs(ref s))
             {
                 Console.WriteLine("'FREESTYLE' parsed as SwimStroke");
             }
@@ -33,7 +33,7 @@
             }
 
             SwimStroke s2 = SwimStroke.Unknown;
-            if ("SIDESTROKE".TryParseAs<SwimStroke>(ref s2))
+            if ("SIDESTROKE".TryParseAs(ref s2))
             {
                 Console.WriteLine("'SIDESTROKE' parsed as SwimStroke");
             }
@@ -43,7 +43,7 @@
             }
 
             Int32? y = null;
-            if ("2".TryParseAs<Int32?>(ref y))
+            if ("2".TryParseAs(ref y))
             {
                 Console.WriteLine("'2' parsed as Int32?");
             }

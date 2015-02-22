@@ -9,6 +9,6 @@
 
     public interface IParsable<T> where T : new()
     {
-        T FromString(String value);
+        void Parse(String value);
     }
 }
